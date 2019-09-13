@@ -15,7 +15,7 @@ var db_config = {
 
 var connection;
 
-
+connection = mysql.createConnection(db_config);
 app.get('/', function(request, response) {
     connection.query('SELECT * from user', function(err, rows, fields) {
         if (err) {
