@@ -1,7 +1,5 @@
 {
-  "name": "DataMannual",
-  "version": "0.0.1",
-  "scripts": {
+   "scripts": {
     "start": "node web.js"
   },
   "dependencies": {
