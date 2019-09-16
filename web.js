@@ -4,7 +4,8 @@ var app = express();
 
 
 
-app.use(express.logger());
+app.use('/', express.static(`${process.cwd()}/../client`));
+
 
 var db_config = {
     host     : 'sql12.freemysqlhosting.net',
