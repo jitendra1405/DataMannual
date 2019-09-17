@@ -7,6 +7,13 @@ var app = express();
 app.use('/', express.static(`${process.cwd()}/../client`));
 
 
+app.get('/myform', function(req, res){ 
+    var myText = req.query.mytext; //mytext is the name of your input box
+    res.send('Your Text:' +myText); 
+}); 
+
+
+
 var db_config = {
     host     : 'sql12.freemysqlhosting.net',
     database : 'sql12304794',
